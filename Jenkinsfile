@@ -36,11 +36,11 @@ pipeline {
                 def buildDuration = currentBuild.durationString
 
                 def emailBody = """
-                    <p>Build Result: ${buildResult}</p>
-                    <p>Project Name: ${projectName}</p>
-                    <p>Build Number: ${buildNumber}</p>
-                    <p>Build URL: ${buildUrl}</p>
-                    <p>Build Duration: ${buildDuration}</p>
+                    Build Result: ${buildResult}
+                    Project Name: ${projectName}
+                    Build Number: ${buildNumber}
+                    Build URL: ${buildUrl}
+                    Build Duration: ${buildDuration}
                 """
 
                 emailext(
